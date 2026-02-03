@@ -1,0 +1,6 @@
+this file contains donkey word.
+replace the donkey in this file with 'donkey#'.
+so, lets remove all the donkey in this file.
+no donkey left in the file.
+donkey donkey.
+end of donkey file.

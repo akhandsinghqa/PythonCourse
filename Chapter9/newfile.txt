@@ -1,0 +1,5 @@
+Start of the file.
+This is the new file for read.
+The first line of the file.
+Second line of the file.
+End of the file.
