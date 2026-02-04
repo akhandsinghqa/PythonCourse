@@ -6,7 +6,7 @@ with open("OriginalFile.txt", "r") as rf:
     text = rf.read().lower()
 
 if word in text:
-    text = text.replace(word, '#'*len(word))
+    text = text.replace(word, '#' * len(word))
     with open("OriginalFile.txt", "w") as wf:
         wf.write(text)
     print("The word donkey replaced by ##### in the OriginalFile.txt")

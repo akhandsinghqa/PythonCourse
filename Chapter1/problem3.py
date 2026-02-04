@@ -1,13 +1,13 @@
 import os
 
 # Specify the directory path
-path = "/home/akhand/Downloads"  
+path = "/home/akhand/Downloads"
 # Change this to the directory you want to list
 
 try:
     # Get the list of files and folders
     contents = os.listdir(path)
-    
+
     # Print directory contents
     print(f"Contents of '{path}':")
     for item in contents:

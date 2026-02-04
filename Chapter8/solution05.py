@@ -8,9 +8,10 @@
 #         print("*"*(n-i),sep="")
 
 def pattern(n):
-    if(n==0):
+    if (n == 0):
         return
-    print("*"*n)
-    return pattern(n-1)
+    print("*" * n)
+    return pattern(n - 1)
+
 
 pattern(10)

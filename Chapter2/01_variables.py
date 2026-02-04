@@ -1,9 +1,9 @@
-a=1  # Integer
+a = 1  # Integer
 
-b=7.67 # Floating point number
+b = 7.67  # Floating point number
 
-c=False # Boolean
+c = False  # Boolean
 
-d="Akhand"  # String
+d = "Akhand"  # String
 
-e=None   # None datatype
+e = None  # None datatype

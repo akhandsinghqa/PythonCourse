@@ -5,6 +5,7 @@
 
 fname = "Hi-score.txt"
 
+
 # def create_file():
 #     f = open(fname, "w")
 #     f.close()
@@ -13,14 +14,14 @@ fname = "Hi-score.txt"
 def read_file():
     with open(fname, "r") as rf:
         hiscore = rf.read()
-        if hiscore!="":
+        if hiscore != "":
             return int(hiscore)
         else:
             return 0
 
 
 def game(score, hiscore):
-    print("Your score is :",score)
+    print("Your score is :", score)
     if score > hiscore:
         with open(fname, "w") as wf:
             wf.write(str(score))

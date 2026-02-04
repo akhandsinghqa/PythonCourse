@@ -3,7 +3,7 @@
 count = 1
 
 while count <= 50:
-    if(count==25):
+    if (count == 25):
         break
     print(count)
     count += 1

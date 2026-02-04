@@ -23,16 +23,14 @@ for k in d:
 # Break in loop
 
 for i in range(80):
-    if(i==5):
+    if (i == 5):
         break
     print(i)
 
 for i in range(80):
-    if(i==5):
+    if (i == 5):
         continue
     print(i)
 
 for i in range(80):
     pass
-
-

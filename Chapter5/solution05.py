@@ -1,5 +1,5 @@
 # s = {}
 # What is the type of 's'?  answer : dictonary
 
-s={}
+s = {}
 print(type(s))

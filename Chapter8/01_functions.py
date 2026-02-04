@@ -17,9 +17,8 @@
 # greet(name,"Thank you !")
 # greet("Singh")
 
-def addtion(a,b):
-    return a+b
-
-print(addtion(12,18))
+def addtion(a, b):
+    return a + b
 
 
+print(addtion(12, 18))

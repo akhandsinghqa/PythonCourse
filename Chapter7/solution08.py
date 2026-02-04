@@ -3,4 +3,4 @@
 n = int(input("Enter the number for multiplication : "))
 
 for i in range(10, 0, -1):
-    print(f"{n}*{i}={n*i}")
+    print(f"{n}*{i}={n * i}")

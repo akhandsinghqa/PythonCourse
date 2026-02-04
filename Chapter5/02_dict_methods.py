@@ -4,8 +4,8 @@ a = {
     "name": "akhand",
     "from": "india",
     "marks": [92, 98, 96],
-    1:"demo"
-    }
+    1: "demo"
+}
 
 # print(a.keys())
 # print(a.values())
@@ -17,6 +17,5 @@ a = {
 for key, value in a.items():
     print(key, value)
 
-d={x**2 for x in range(10)}
+d = {x ** 2 for x in range(10)}
 print(d)
-

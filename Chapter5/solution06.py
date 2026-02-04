@@ -4,11 +4,11 @@
 # If the names of 2 friends are same; what will happen to the program in problem 6?
 # If languages of two friends are same; what will happen to the program in problem 6 ?
 
-d={}
+d = {}
 
 for i in range(4):
-    key=input("Enter your name : ")
-    value=input("Enter you favorite : ")
-    d.update({key:value})
+    key = input("Enter your name : ")
+    value = input("Enter you favorite : ")
+    d.update({key: value})
 
 print(d.items())
