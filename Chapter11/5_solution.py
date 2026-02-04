@@ -20,10 +20,10 @@ class Nvector:
         x = self.vector
         y = other.vector
         if len(x) == len(y):
-            z = []
+            total=0
             for i in range(len(x)):
-                z.append(x[i] * y[i])
-            return z
+                total+=x[i] * y[i]
+            return total
         else:
             return f"Both vector are of different size"
 
@@ -33,5 +33,3 @@ b = Nvector([3, 8, -8, -12, 6])
 
 print(a + b)
 print(a * b)
-print(b + a)
-print(b * a)
