@@ -1,5 +1,6 @@
 from random import randint
 
+
 class GuessingGame:
     def __init__(self):
         self.secret_number = randint(1, 100)
@@ -30,6 +31,7 @@ class GuessingGame:
                 print(f"Correct Guess: {user_guess}!")
                 print(f"It took you {self.attempts} attempts.")
                 break
+
 
 if __name__ == "__main__":
     game = GuessingGame()
