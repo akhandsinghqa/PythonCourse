@@ -10,8 +10,8 @@ def gemini_ai(command_ask):
     print("Looking for Gemini AI response .....")
     model_id = "gemini-3-flash-preview"
     config_value = types.GenerateContentConfig(
-        system_instruction="You are a concise assistant. Your responses must be exactly 2 sentences long. No more, no less."
-        # max_output_tokens=300
+        system_instruction="You are a concise assistant. Your responses must be exactly 2 sentences long. No more, no less.",
+        max_output_tokens=300
     )
     try:
         response = client.models.generate_content(
