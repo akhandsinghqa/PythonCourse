@@ -2,14 +2,12 @@ import webbrowser
 
 import pyttsx3
 import requests
-from google import genai
-from google.genai import types
 
+from ai_client import gemini_ai
 from musiclib import music
 
 engine = pyttsx3.init()
 news_apikey = ""
-client = genai.Client(api_key="")
 engine.setProperty('rate', 150)
 
 
@@ -39,20 +37,10 @@ def read_news():
         speak("I'm having trouble accessing the news right now.")
 
 
-def ask_Gemini(command_ask):
-    print("Looking for Gemini AI response .....")
-    model_id = "gemini-3-flash-preview"
-    config_value = types.GenerateContentConfig(
-        system_instruction="You are a concise assistant. Your responses must be exactly 5 sentences long. No more, no less.",
-        max_output_tokens=300
-    )
-    response = client.models.generate_content(
-        model=model_id,
-        contents=command_ask,
-        config=config_value
-    )
-    print(str(response.text))
-    speak(response.text)
+def ask_gemini(command_ask):
+    gemini_response = gemini_ai(command_ask)
+    print(gemini_response)
+    speak(gemini_response)
 
 
 def process_command(command):
@@ -69,4 +57,4 @@ def process_command(command):
     elif "news" in command:
         read_news()
     else:
-        ask_Gemini(command)
+        ask_gemini(command)
